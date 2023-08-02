@@ -60,8 +60,6 @@ public class UserResource {
 		obj.setId(id);
 		obj = service.update(obj.getId(), obj);
 		return ResponseEntity.noContent().build();
-		
-		
 	}
 	
 }
