@@ -44,6 +44,11 @@ git clone https://github.com/wagnerchc/workshop-springboot3-mongodb.git
     <li>GET - Consultar um usuário - http://localhost:8080/users/{id}</li>
     <li>PUT - Atualizar um usuário - http://localhost:8080/users/{id}</li>
     <li>DELETE - Excluir um usuário - http://localhost:8080/users/{id}</li>
+    <li>GET - Consultar lista de posts por autor - http://localhost:8080/users/{id}/posts</li>
+    <li>GET - Consultar post por id - http://localhost:8080/posts/{id}</li>
+    <li>GET - Consultar post por título - http://localhost:8080/posts/titlesearch?text={text}</li>
+    <li>GET - Consultar post por título usando regex do MondoDB - http://localhost:8080/posts/regex?text={text}</li>
+    <li>GET - Consultar post por conteúdo do título ou corpo ou comentários do post ou data de publicação menor ou igual ao valor usando regex do MondoDB - http://localhost:8080/posts/fullsearch?text={text}&minDate={yyyy-mm-dd}&maxDate={yyyy-mm-dd}</li>
 </ul>
 
 # Autor
