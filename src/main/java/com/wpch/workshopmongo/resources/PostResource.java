@@ -34,4 +34,11 @@ public class PostResource {
 		return ResponseEntity.ok().body(list);
 	}
 	
+	@GetMapping(value = "/regex")
+	public ResponseEntity<List<Post>> findByTitleRegex(@RequestParam(value = "text", defaultValue = "") String text){
+		text = URL.decodeParam(text);
+		List<Post> list = service.findByTitleRegex(text);		
+		return ResponseEntity.ok().body(list);
+	}
+	
 }
